@@ -1,0 +1,10 @@
+export { default as banner } from "./images/banner.jpg";
+export { default as socket } from "./images/socket.jpg";
+export { default as watch } from "./images/watch.png";
+export { default as taj } from "./images/taj.jpg";
+export { default as job } from "./images/job.png";
+export { default as property } from "./images/property.jpg";
+export { default as prop1 } from "./images/prop1.jpeg";
+export { default as prop2 } from "./images/prop2.jpeg";
+export { default as prop3 } from "./images/prop3.jpeg";
+export { default as prop4 } from "./images/prop4.jpeg";

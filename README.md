@@ -1,10 +1,11 @@
-# React + Vite
+# this is vite react project and with tailwind css
+# the folder structure as follow ,"all image is in assets folder " , "components we have {footer, header ,home }  and index to export and import"
+# we have page folder to mange the page's  
+# we have style folder in which we have css styles 
+# we have  page folder in which we have Multipale page's like job login contact Properties ,error page etc
+# in Job Portail page we have pages like Main pages ( in main page we have Apply form Findjob and home page And post Job pages )
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
