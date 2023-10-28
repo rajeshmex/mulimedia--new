@@ -18,6 +18,8 @@ import Success from "./pages/Job_portail/pages/Post_job_page/Forms/Success";
 import PropertyNavbar from "./components/Header/Properties_header";
 import Home_Properties_page from "./pages/Properties/Properties_pages/Home/Home_properties";
 import Details from "./pages/Properties/Properties_pages/Properties_details/Details";
+import ChatMain from "./pages/chat-All-components/ChatMain";
+import Alert from "./components/AlertAllComponents/Alert";
 function App() {
   const { user } = useContext(MyContext);
   const Location = useLocation();
@@ -36,7 +38,8 @@ function App() {
       {renderHeader()}
 
       <Routes>
-        <Route path="/" element={<Jobportailpage />} />
+        {/* <Route path="/" element={<Jobportailpage />} /> */}
+        <Route path="/" element={<ChatMain />} />
 
         <Route
           path="/post_job"
@@ -52,18 +55,13 @@ function App() {
           <Route path="success" element={<Success />}></Route>
         </Route>
 
-
         {/* ====== nesting routing here of job post =============== */}
 
-        {/* <Route path="/post" element={<Post_job></Post_job>}>
-          <Route index path="" element={<Main />}></Route>
-          <Route path="payment" element={<Paymentform />}></Route>
-          <Route path="success" element={<Success />}></Route>
-        </Route> */}
         {/* ======= end ====== */}
 
         <Route path="/find" element={<Findjob></Findjob>}></Route>
-        <Route path="/apply" element={<Apply></Apply>}></Route>
+        {/* <Route path="/apply" element={<Apply></Apply>}></Route> */}
+        <Route path="/apply" element={<Alert />}></Route>
 
         <Route
           path="/property"
@@ -84,3 +82,46 @@ function App() {
 }
 
 export default App;
+
+
+//  <div className="image-container">
+//    <img
+//      src={data[0].img}
+//      alt="Image"
+//      onMouseEnter={handleMouseEnter}
+//      onMouseLeave={handleMouseLeave}
+//      onMouseMove={handleMouseMove}
+//    />
+
+//    {zoomed && (
+//      <div className="zoomed-image-container ml-72">
+//        <img
+//          src={data[0].img}
+//          alt="Zoomed Image"
+//          style={{
+//            objectPosition: `-${position.x}px -${position.y}px`,
+//          }}
+//        />
+//      </div>
+//    )}
+//  </div>;
+
+
+  // const [zoomed, setZoomed] = useState(false);
+  // const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  // const handleMouseEnter = () => {
+  //   setZoomed(true);
+  // };
+
+  // const handleMouseLeave = () => {
+  //   setZoomed(false);
+  // };
+
+  // const handleMouseMove = (e) => {
+  //   const rect = e.target.getBoundingClientRect();
+  //   const x = e.clientX - rect.left;
+  //   const y = e.clientY - rect.top;
+
+  //   setPosition({ x, y });
+  // };

@@ -7,16 +7,17 @@ const CategoryPropertyData = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE_EjgxXy8wsIz3IajoWaHy1lf8rQhsipkhIkkcOw_&s",
     ],
     category: "shop",
-    sellername: "SELLER NAME",
+    sellername: "shekhar ",
     state: "Assam",
     district: "Guwagati Road",
     village: "Silapatha",
     tscode: "872626",
+    contact: "8076569540",
     price: "150000",
     area: "0.00008",
     date: "1 months",
     description:
-      "Lorem, ipsum dolor sit amere corporis quaerat! Ipsum.Lorem, ipsum dolor sit amere corporis quaerat!this is not for salwe ",
+      "dont tell to other person .hii i want to sell my property ! please contact me as sson as possible my contact is in data of property. ",
   },
   {
     id: 2,
@@ -31,7 +32,7 @@ const CategoryPropertyData = [
     area: "0.00008",
     date: "15 day",
     description:
-      "Lorem, ipsum dolor sit amere corporis quaerat! Ipsum.Lorem, ipsum dolor sit amere corporis quaerat!this is not for salwe ",
+      "dont tell to other person .hii i want to sell my property ! please contact me as sson as possible my contact is in data of property2. ",
   },
   {
     id: 3,

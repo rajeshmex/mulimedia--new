@@ -17,8 +17,8 @@ const PropertyNavbar = () => {
     <>
       <div className="w-full z-50 flex items-center justify-between sticky top-0 bg-white shadow-lg p-3 px-6">
         <NavLink to={"/"}>
-          {" "}
-          <div className="ml-5">Logo</div>{" "}
+          
+          <div className="ml-5">Logo</div>
         </NavLink>
         <div className="flex md gap-2 items-center">
           <div className="flex gap-2 items-center">
