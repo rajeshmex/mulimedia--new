@@ -48,7 +48,6 @@ const Home_Properties_page = () => {
             </div>
           </div>
           {/* search and filter option */}
-
           <div className="w-full pt-3 pb-2 flex justify-between flex-wrap ">
             <div className="md:w-[40%] w-full border-[1.2px] overflow-hidden flex rounded-sm border-[#2e31e6] items-center">
               <input

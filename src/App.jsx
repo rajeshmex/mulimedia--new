@@ -50,6 +50,7 @@ function App() {
           }
         >
           <Route index path="" element={<Main />}></Route>
+          <Route index path="" element={<Main />}></Route>
           <Route path="payment" element={<Paymentform />}></Route>
           <Route path="success" element={<Success />}></Route>
         </Route>
