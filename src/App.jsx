@@ -34,10 +34,10 @@ function App() {
   return (
     <>
       {renderHeader()}
-      hjk
+
       <Routes>
         <Route path="/" element={<Jobportailpage />} />
-
+        gfgghfghf
         <Route
           path="/post_job"
           element={
@@ -51,28 +51,22 @@ function App() {
           <Route path="payment" element={<Paymentform />}></Route>
           <Route path="success" element={<Success />}></Route>
         </Route>
-
         {/* ====== nesting routing here of job post =============== */}
-
         {/* <Route path="/post" element={<Post_job></Post_job>}>
           <Route index path="" element={<Main />}></Route>
           <Route path="payment" element={<Paymentform />}></Route>
           <Route path="success" element={<Success />}></Route>
         </Route> */}
         {/* ======= end ====== */}
-
         <Route path="/find" element={<Findjob></Findjob>}></Route>
         <Route path="/apply" element={<Apply></Apply>}></Route>
-
         <Route
           path="/property"
           element={<Home_Properties_page></Home_Properties_page>}
         ></Route>
         <Route path="/property/:id" element={<Details></Details>}></Route>
-
         <Route path="/login" element={<Signin></Signin>}></Route>
         <Route path="/sign" element={<Signup></Signup>}></Route>
-
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="*" element={<Error></Error>}></Route>
       </Routes>
