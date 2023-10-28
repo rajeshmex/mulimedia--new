@@ -40,7 +40,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Jobportailpage />} />
-        {/* 
+
         <Route
           path="/post_job"
           element={
@@ -48,15 +48,19 @@ function App() {
               <Post_job />
             </ProtectedRouter>
           }
-        ></Route> */}
-
-        {/* ====== nesting routing here of job post =============== */}
-
-        <Route path="/post" element={<Post_job></Post_job>}>
+        >
           <Route index path="" element={<Main />}></Route>
           <Route path="payment" element={<Paymentform />}></Route>
           <Route path="success" element={<Success />}></Route>
         </Route>
+
+        {/* ====== nesting routing here of job post =============== */}
+
+        {/* <Route path="/post" element={<Post_job></Post_job>}>
+          <Route index path="" element={<Main />}></Route>
+          <Route path="payment" element={<Paymentform />}></Route>
+          <Route path="success" element={<Success />}></Route>
+        </Route> */}
         {/* ======= end ====== */}
 
         <Route path="/find" element={<Findjob></Findjob>}></Route>

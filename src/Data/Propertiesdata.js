@@ -2,6 +2,10 @@ const CategoryPropertyData = [
   {
     id: 1,
     img: "https://img.freepik.com/free-vector/cartoon-style-cafe-front-shop-view_134830-697.jpg",
+    thumbnailImages: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAGbzrhpTi4Q0o5o0JSRVDSZ6zifJth2yxXYg26zgW&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE_EjgxXy8wsIz3IajoWaHy1lf8rQhsipkhIkkcOw_&s",
+    ],
     category: "shop",
     sellername: "SELLER NAME",
     state: "Assam",

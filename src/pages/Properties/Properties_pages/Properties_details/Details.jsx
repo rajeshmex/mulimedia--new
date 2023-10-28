@@ -1,29 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { property } from "../../../../assets/Index";
 import CategoryPropertyData from "../../../../Data/Propertiesdata"; // Import your property data
 
 function Details() {
   const { id } = useParams();
-
-  // Find the property with the matching id
+  const [currentImage, setCurrentImage] = useState(null);
   const selectedProperty = CategoryPropertyData.find(
     (property) => property.id === parseInt(id)
   );
 
+  // Check if selectedProperty exists before accessing its properties
   if (!selectedProperty) {
-    // Handle the case where no property with the given id is found
     return <div>No data found for this ID</div>;
   }
+
+  // Initialize the currentImage when the selectedProperty is available
+  if (!currentImage) {
+    setCurrentImage(selectedProperty.img);
+  }
+
+  const handleThumbnailClick = (newImage) => {
+    setCurrentImage(newImage);
+  };
   return (
     <section class="text-gray-600 body-font overflow-hidden">
       <div class="container px-5 py-24 mx-auto">
         <div class="lg:w-4/5 mx-auto flex flex-wrap">
           <img
-            alt="ecommerce"
-            class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
-            src={selectedProperty.img}
+            alt="Property"
+            className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+            src={currentImage} // Display the current image
           />
+
+          <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+            {/* Thumbnail images */}
+            {selectedProperty.thumbnailImages.map((thumbnail, index) => (
+              <img
+                key={index}
+                alt="Thumbnail"
+                className="cursor-pointer w-16 h-16 object-cover object-center rounded mr-2 border"
+                src={thumbnail}
+                onClick={() => handleThumbnailClick(thumbnail)}
+              />
+            ))}
+          </div>
           <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
             <h2 class="text-sm title-font text-gray-500 tracking-widest">
               {selectedProperty.sellername}

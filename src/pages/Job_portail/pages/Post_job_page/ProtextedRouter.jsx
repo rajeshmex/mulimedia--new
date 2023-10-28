@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 
 function ProtectedRouter({ user, children }) {
   const navigate = useNavigate();
@@ -9,7 +9,7 @@ function ProtectedRouter({ user, children }) {
     return null;
   }
 
-  return <h1>Hello {children}</h1>;
+  return <Outlet></Outlet>;
 }
 
 export default ProtectedRouter;

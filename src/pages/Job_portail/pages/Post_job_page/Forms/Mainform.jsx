@@ -273,7 +273,7 @@ function Main() {
 
             {/* <!--     Submit     --> */}
             <div>
-              <Link to={"/post/payment"}>
+              <Link to={"/post_job/payment"}>
                 <button
                   class="bg-primary hover:bg-secondary text-white py-2 px-3 rounded"
                   type="submit"
