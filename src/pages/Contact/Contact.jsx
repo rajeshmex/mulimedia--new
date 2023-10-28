@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
+function classNames(...classNamees) {
+  return classNamees.filter(Boolean).join(" ");
 }
 
 export default function Example() {

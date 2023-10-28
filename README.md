@@ -4,7 +4,7 @@
 # we have style folder in which we have css styles 
 # we have  page folder in which we have Multipale page's like job login contact Properties ,error page etc
 # in Job Portail page we have pages like Main pages ( in main page we have Apply form Findjob and home page And post Job pages )
-
+# we have diffrent routing in 
 
 
 

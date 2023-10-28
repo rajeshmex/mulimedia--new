@@ -7,19 +7,22 @@ function Main() {
   // const { user } = useContext(MyContext);
   return (
     <>
-      <div class="main bg-white px-6 md:px-16 py-6 mt-16">
-        <div class="w-full max-w-xl mx-auto">
+      <div className="main bg-white px-6 md:px-16 py-6 mt-16">
+        <div className="w-full max-w-xl mx-auto">
           <form action="" method="post">
-            <h1 class="text-2xl mb-2">Post new job</h1>
+            <h1 className="text-2xl mb-2">Post new job</h1>
 
-            <div class="job-info border-b-2 py-2 mb-5">
+            <div className="job-info border-b-2 py-2 mb-5">
               {/* <!--    Title      --> */}
-              <div class="mb-4">
-                <label class="block text-gray-700 text-sm mb-2" for="job-title">
+              <div className="mb-4">
+                <label
+                  className="block text-gray-700 text-sm mb-2"
+                  for="job-title"
+                >
                   Title
                 </label>
                 <input
-                  class="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
+                  className="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
                   type="email"
                   id="job-title"
                   name="job-title"
@@ -29,15 +32,15 @@ function Main() {
               </div>
 
               {/* <!--     Link to apply     --> */}
-              <div class="mb-4">
+              <div className="mb-4">
                 <label
-                  class="block text-gray-700 text-sm mb-2"
+                  className="block text-gray-700 text-sm mb-2"
                   for="apply-link"
                 >
                   Link to apply
                 </label>
                 <input
-                  class="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
+                  className="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
                   type="email"
                   id="apply-link"
                   name="apply-link"
@@ -45,18 +48,18 @@ function Main() {
                 />
               </div>
 
-              <div class="md:flex md:justify-between gap-5">
+              <div className="md:flex md:justify-between gap-5">
                 {/* <!--      Job Type      --> */}
-                <div class="w-full md:w-3/12 mb-4 md:mb-0">
+                <div className="w-full md:w-3/12 mb-4 md:mb-0">
                   <label
-                    class="block text-gray-700 text-sm mb-2"
+                    className="block text-gray-700 text-sm mb-2"
                     for="job-type"
                   >
                     Job Type
                   </label>
-                  <div class="relative">
+                  <div className="relative">
                     <select
-                      class="block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
+                      className="block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
                       id="job-type"
                       name="job-type"
                     >
@@ -66,9 +69,9 @@ function Main() {
                       <option>Contract</option>
                     </select>
 
-                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                       <svg
-                        class="fill-current h-4 w-4"
+                        className="fill-current h-4 w-4"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                       >
@@ -79,16 +82,16 @@ function Main() {
                 </div>
 
                 {/* <!--     Location       --> */}
-                <div class="w-full md:w-3/12 mb-4 md:mb-0">
+                <div className="w-full md:w-3/12 mb-4 md:mb-0">
                   <label
-                    class="block text-gray-700 text-sm mb-2"
+                    className="block text-gray-700 text-sm mb-2"
                     for="job-type"
                   >
                     City
                   </label>
-                  <div class="relative">
+                  <div className="relative">
                     <select
-                      class="block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
+                      className="block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
                       id="job-type"
                       name="job-type"
                     >
@@ -97,9 +100,9 @@ function Main() {
                       ))}
                     </select>
 
-                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                       <svg
-                        class="fill-current h-4 w-4"
+                        className="fill-current h-4 w-4"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                       >
@@ -109,16 +112,16 @@ function Main() {
                   </div>
                 </div>
 
-                <div class="w-full md:w-3/12 mb-4 md:mb-0">
+                <div className="w-full md:w-3/12 mb-4 md:mb-0">
                   <label
-                    class="block text-gray-700 text-sm mb-2"
+                    className="block text-gray-700 text-sm mb-2"
                     for="job-type"
                   >
                     State
                   </label>
-                  <div class="relative">
+                  <div className="relative">
                     <select
-                      class="block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
+                      className="block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
                       id="job-type"
                       name="job-type"
                     >
@@ -127,9 +130,9 @@ function Main() {
                       ))}
                     </select>
 
-                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                       <svg
-                        class="fill-current h-4 w-4"
+                        className="fill-current h-4 w-4"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                       >
@@ -139,16 +142,16 @@ function Main() {
                   </div>
                 </div>
 
-                <div class="w-full md:w-3/12 mb-4 md:mb-0">
+                <div className="w-full md:w-3/12 mb-4 md:mb-0">
                   <label
-                    class="block text-gray-700 text-sm mb-2"
+                    className="block text-gray-700 text-sm mb-2"
                     for="job-type"
                   >
                     Distice
                   </label>
-                  <div class="relative">
+                  <div className="relative">
                     <select
-                      class="block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
+                      className="block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
                       id="job-type"
                       name="job-type"
                     >
@@ -157,9 +160,9 @@ function Main() {
                       ))}
                     </select>
 
-                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                       <svg
-                        class="fill-current h-4 w-4"
+                        className="fill-current h-4 w-4"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                       >
@@ -170,14 +173,17 @@ function Main() {
                 </div>
               </div>
 
-              <div class="flex flex-wrap -mx-3 mt-6">
+              <div className="flex flex-wrap -mx-3 mt-6">
                 {/* <!--     Company       --> */}
-                <div class="w-full md:w-1/2 px-3 mb-4 md:mb-0">
-                  <label for="company" class="block text-gray-700 text-sm mb-2">
+                <div className="w-full md:w-1/2 px-3 mb-4 md:mb-0">
+                  <label
+                    for="company"
+                    className="block text-gray-700 text-sm mb-2"
+                  >
                     Select
                   </label>
                   <select
-                    class="block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
+                    className="block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500"
                     id="job-type"
                     name="job-type"
                   >
@@ -189,13 +195,16 @@ function Main() {
                 </div>
 
                 {/* <!--      Company Website      --> */}
-                <div class="w-full md:w-1/2 px-3 mb-4 md:mb-0">
-                  <label for="company" class="block text-gray-700 text-sm mb-2">
+                <div className="w-full md:w-1/2 px-3 mb-4 md:mb-0">
+                  <label
+                    for="company"
+                    className="block text-gray-700 text-sm mb-2"
+                  >
                     Proof Documents
                   </label>
                   <input
                     type="file"
-                    class="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
+                    className="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
                     id="company"
                     name="company"
                     placeholder="https://www.djangoproject.com/"
@@ -208,7 +217,7 @@ function Main() {
               <div>
                 <label
                   for="description"
-                  class="block text-gray-700 text-sm mb-2"
+                  className="block text-gray-700 text-sm mb-2"
                 >
                   Description
                 </label>
@@ -222,15 +231,18 @@ function Main() {
                 ></textarea>
               </div>
 
-              <div class="flex flex-wrap -mx-3">
+              <div className="flex flex-wrap -mx-3">
                 {/* <!--     Company       --> */}
-                <div class="w-full md:w-1/2 px-3 mb-4 md:mb-0">
-                  <label for="company" class="block text-gray-700 text-sm mb-2">
+                <div className="w-full md:w-1/2 px-3 mb-4 md:mb-0">
+                  <label
+                    for="company"
+                    className="block text-gray-700 text-sm mb-2"
+                  >
                     Company
                   </label>
                   <input
                     type="text"
-                    class="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
+                    className="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
                     id="company"
                     name="company"
                     placeholder="Company"
@@ -238,13 +250,16 @@ function Main() {
                 </div>
 
                 {/* <!--      Company Website      --> */}
-                <div class="w-full md:w-1/2 px-3 mb-4 md:mb-0">
-                  <label for="company" class="block text-gray-700 text-sm mb-2">
+                <div className="w-full md:w-1/2 px-3 mb-4 md:mb-0">
+                  <label
+                    for="company"
+                    className="block text-gray-700 text-sm mb-2"
+                  >
                     Company Website
                   </label>
                   <input
                     type="text"
-                    class="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
+                    className="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
                     id="company"
                     name="company"
                     placeholder="https://www.djangoproject.com/"
@@ -254,16 +269,16 @@ function Main() {
               {/* <!-- end group --> */}
 
               {/* <!--      Company Website      --> */}
-              <div class="mb-4 md:mb-0">
+              <div className="mb-4 md:mb-0">
                 <label
                   for="company-logo"
-                  class="block text-gray-700 text-sm mb-2"
+                  className="block text-gray-700 text-sm mb-2"
                 >
                   Logo Image
                 </label>
                 <input
                   type="file"
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-3 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-3 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="company-logo"
                   name="company-logo"
                 />
@@ -275,7 +290,7 @@ function Main() {
             <div>
               <Link to={"/post_job/payment"}>
                 <button
-                  class="bg-primary hover:bg-secondary text-white py-2 px-3 rounded"
+                  className="bg-primary hover:bg-secondary text-white py-2 px-3 rounded"
                   type="submit"
                 >
                   Create job
