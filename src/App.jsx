@@ -83,7 +83,6 @@ function App() {
 
 export default App;
 
-
 //  <div className="image-container">
 //    <img
 //      src={data[0].img}
@@ -106,22 +105,21 @@ export default App;
 //    )}
 //  </div>;
 
+// const [zoomed, setZoomed] = useState(false);
+// const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  // const [zoomed, setZoomed] = useState(false);
-  // const [position, setPosition] = useState({ x: 0, y: 0 });
+// const handleMouseEnter = () => {
+//   setZoomed(true);
+// };
 
-  // const handleMouseEnter = () => {
-  //   setZoomed(true);
-  // };
+// const handleMouseLeave = () => {
+//   setZoomed(false);
+// };
 
-  // const handleMouseLeave = () => {
-  //   setZoomed(false);
-  // };
+// const handleMouseMove = (e) => {
+//   const rect = e.target.getBoundingClientRect();
+//   const x = e.clientX - rect.left;
+//   const y = e.clientY - rect.top;
 
-  // const handleMouseMove = (e) => {
-  //   const rect = e.target.getBoundingClientRect();
-  //   const x = e.clientX - rect.left;
-  //   const y = e.clientY - rect.top;
-
-  //   setPosition({ x, y });
-  // };
+//   setPosition({ x, y });
+// };
