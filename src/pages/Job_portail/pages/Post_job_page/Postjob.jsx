@@ -1,17 +1,12 @@
-import React, { useContext, useEffect } from "react";
-import { MyContext } from "../../../../Context/createcontext";
-import PostJobheader from "./PostJobheader";
-import { Link, Outlet } from "react-router-dom";
-import cities from "./../../../../Data/cities.json";
-import Main from "./Forms/Mainform";
-function Post_job() {
-  console.log(cities);
+// eslint-disable-next-line no-unused-vars
+import React, { useContext } from "react";
 
-  const { user } = useContext(MyContext);
+import PostJobheader from "./PostJobheader";
+
+function Post_job() {
   return (
     <>
       <PostJobheader />
-      <Outlet></Outlet>
     </>
   );
 }

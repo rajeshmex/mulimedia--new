@@ -97,7 +97,7 @@ const Home_Properties_page = () => {
         </div>
       </div>
 
-      <div class="flex flex-wrap justify-center gap-5">
+      <div className="flex flex-wrap justify-center gap-5">
         {filteredData.map((val, id) => {
           return (
             <>

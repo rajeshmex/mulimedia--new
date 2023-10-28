@@ -48,18 +48,18 @@ function Jobportailpage() {
               </p>
 
               <form>
-                <div class="grid gap-6 mb-6 md:grid-cols-2">
+                <div className="grid gap-6 mb-6 md:grid-cols-2">
                   <div>
                     <label
                       for="job_name"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
                       Name
                     </label>
                     <input
                       type="text"
                       id="job_name"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       placeholder="job_name"
                       required
                     />
@@ -67,14 +67,14 @@ function Jobportailpage() {
                   <div>
                     <label
                       for="Location"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
                       Location
                     </label>
                     <input
                       type="text"
                       id="Location"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       placeholder="Location"
                       required
                     />
@@ -82,7 +82,7 @@ function Jobportailpage() {
                 </div>
                 <button
                   type="submit"
-                  class="text-white bg-primary hover:bg-hover focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  className="text-white bg-primary hover:bg-hover focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Submit
                 </button>
@@ -93,38 +93,38 @@ function Jobportailpage() {
         </div>
 
         <div className="flex justify-end gap-5 p-4 py-10">
-          <div class="relative h-[400px] w-[300px] rounded-md">
+          <div className="relative h-[400px] w-[300px] rounded-md">
             <img
               src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
               alt="AirMax Pro"
-              class="z-0 h-full w-full rounded-md object-cover"
+              className="z-0 h-full w-full rounded-md object-cover"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-            <div class="absolute bottom-4 left-4 text-left">
-              <h1 class="text-lg font-semibold text-white">Delba</h1>
-              <p class="mt-2 text-sm text-gray-300">
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+            <div className="absolute bottom-4 left-4 text-left">
+              <h1 className="text-lg font-semibold text-white">Delba</h1>
+              <p className="mt-2 text-sm text-gray-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Excepturi, debitis?
               </p>
-              <button class="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+              <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
                 View Profile →
               </button>
             </div>
           </div>
-          <div class="relative h-[400px] w-[300px] rounded-md">
+          <div className="relative h-[400px] w-[300px] rounded-md">
             <img
               src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
               alt="AirMax Pro"
-              class="z-0 h-full w-full rounded-md object-cover"
+              className="z-0 h-full w-full rounded-md object-cover"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-            <div class="absolute bottom-4 left-4 text-left">
-              <h1 class="text-lg font-semibold text-white">Delba</h1>
-              <p class="mt-2 text-sm text-gray-300">
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+            <div className="absolute bottom-4 left-4 text-left">
+              <h1 className="text-lg font-semibold text-white">Delba</h1>
+              <p className="mt-2 text-sm text-gray-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Excepturi, debitis?
               </p>
-              <button class="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+              <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
                 View Profile →
               </button>
             </div>

@@ -4,32 +4,32 @@ import { Link } from "react-router-dom";
 function Signup() {
   return (
     <section>
-      <div class="grid grid-cols-1 lg:grid-cols-2 mt-20">
-        <div class="relative flex items-end px-4 pb-10 pt-60 sm:px-6 sm:pb-16 md:justify-center lg:px-8 lg:pb-24">
-          <div class="absolute inset-0">
+      <div className="grid grid-cols-1 lg:grid-cols-2 mt-20">
+        <div className="relative flex items-end px-4 pb-10 pt-60 sm:px-6 sm:pb-16 md:justify-center lg:px-8 lg:pb-24">
+          <div className="absolute inset-0">
             <img
-              class="h-full w-full rounded-md object-cover object-top"
+              className="h-full w-full rounded-md object-cover object-top"
               src="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2lnbnVwfGVufDB8fDB8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
               alt=""
             />
           </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-          <div class="relative">
-            <div class="w-full max-w-xl xl:mx-auto xl:w-full xl:max-w-xl xl:pr-24">
-              <h3 class="text-4xl font-bold text-white">
+          <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+          <div className="relative">
+            <div className="w-full max-w-xl xl:mx-auto xl:w-full xl:max-w-xl xl:pr-24">
+              <h3 className="text-4xl font-bold text-white">
                 Now you find your Dream Job from here
               </h3>
-              <ul class="mt-10 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
+              <ul className="mt-10 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
                 {[
                   " Trust License",
                   "12000 customer",
                   "24X7 customer care service",
                   "  Your Trust Included",
                 ].map((item) => (
-                  <li class="flex items-center space-x-3">
-                    <div class="inline-flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-primary">
+                  <li className="flex items-center space-x-3">
+                    <div className="inline-flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-primary">
                       <svg
-                        class="h-3.5 w-3.5 text-white"
+                        className="h-3.5 w-3.5 text-white"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
@@ -41,38 +41,44 @@ function Signup() {
                         ></path>
                       </svg>
                     </div>
-                    <span class="text-lg font-medium text-white"> {item} </span>
+                    <span className="text-lg font-medium text-white">
+                      {" "}
+                      {item}{" "}
+                    </span>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
         </div>
-        <div class="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
-          <div class="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
-            <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl">
+        <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
+          <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
+            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl">
               Create Account
             </h2>
-            <p class="mt-2 text-base text-gray-600">
+            <p className="mt-2 text-base text-gray-600">
               Already have an account?{" "}
               <Link
                 to="/login"
                 title=""
-                class="font-medium text-black transition-all duration-200 hover:underline"
+                className="font-medium text-black transition-all duration-200 hover:underline"
               >
                 Sign In by id
               </Link>
             </p>
-            <form action="#" method="POST" class="mt-8">
-              <div class="space-y-5">
+            <form action="#" method="POST" className="mt-8">
+              <div className="space-y-5">
                 <div>
-                  <label for="name" class="text-base font-medium text-gray-900">
+                  <label
+                    for="name"
+                    className="text-base font-medium text-gray-900"
+                  >
                     {" "}
                     Full Name{" "}
                   </label>
-                  <div class="mt-2">
+                  <div className="mt-2">
                     <input
-                      class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                      className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                       type="text"
                       placeholder="Full Name"
                       id="name"
@@ -82,14 +88,14 @@ function Signup() {
                 <div>
                   <label
                     for="email"
-                    class="text-base font-medium text-gray-900"
+                    className="text-base font-medium text-gray-900"
                   >
                     {" "}
                     Email address{" "}
                   </label>
-                  <div class="mt-2">
+                  <div className="mt-2">
                     <input
-                      class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                      className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                       type="email"
                       placeholder="Email"
                       id="email"
@@ -97,18 +103,18 @@ function Signup() {
                   </div>
                 </div>
                 <div>
-                  <div class="flex items-center justify-between">
+                  <div className="flex items-center justify-between">
                     <label
                       for="password"
-                      class="text-base font-medium text-gray-900"
+                      className="text-base font-medium text-gray-900"
                     >
                       {" "}
                       Password{" "}
                     </label>
                   </div>
-                  <div class="mt-2">
+                  <div className="mt-2">
                     <input
-                      class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                      className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                       type="password"
                       placeholder="Password"
                       id="password"
@@ -118,7 +124,7 @@ function Signup() {
                 <div>
                   <button
                     type="button"
-                    class="inline-flex w-full items-center justify-center rounded-md bg-black px-3.5 py-2.5 font-semibold leading-7 text-white hover:bg-black/80"
+                    className="inline-flex w-full items-center justify-center rounded-md bg-black px-3.5 py-2.5 font-semibold leading-7 text-white hover:bg-black/80"
                   >
                     Create Account{" "}
                     <svg
@@ -128,10 +134,10 @@ function Signup() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="ml-2"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="ml-2"
                     >
                       <line x1="5" y1="12" x2="19" y2="12"></line>
                       <polyline points="12 5 19 12 12 19"></polyline>
@@ -140,14 +146,14 @@ function Signup() {
                 </div>
               </div>
             </form>
-            <div class="mt-3 space-y-3">
+            <div className="mt-3 space-y-3">
               <button
                 type="button"
-                class="relative inline-flex w-full items-center justify-center rounded-md border border-gray-400 bg-white px-3.5 py-2.5 font-semibold text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black focus:outline-none"
+                className="relative inline-flex w-full items-center justify-center rounded-md border border-gray-400 bg-white px-3.5 py-2.5 font-semibold text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black focus:outline-none"
               >
-                <span class="mr-2 inline-block">
+                <span className="mr-2 inline-block">
                   <svg
-                    class="h-6 w-6 text-rose-500"
+                    className="h-6 w-6 text-rose-500"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
@@ -159,11 +165,11 @@ function Signup() {
               </button>
               <button
                 type="button"
-                class="relative inline-flex w-full items-center justify-center rounded-md border border-gray-400 bg-white px-3.5 py-2.5 font-semibold text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black focus:outline-none"
+                className="relative inline-flex w-full items-center justify-center rounded-md border border-gray-400 bg-white px-3.5 py-2.5 font-semibold text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black focus:outline-none"
               >
-                <span class="mr-2 inline-block">
+                <span className="mr-2 inline-block">
                   <svg
-                    class="h-6 w-6 text-[#2563EB]"
+                    className="h-6 w-6 text-[#2563EB]"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
