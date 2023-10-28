@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       {renderHeader()}
-      jhwergsejfgfjhdghjgdfjgjfgjhf
+
       <Routes>
         <Route path="/" element={<Jobportailpage />} />
 
@@ -51,7 +51,6 @@ function App() {
           <Route path="payment" element={<Paymentform />}></Route>
           <Route path="success" element={<Success />}></Route>
         </Route>
-
 
         {/* ====== nesting routing here of job post =============== */}
 
