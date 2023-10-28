@@ -37,7 +37,7 @@ function App() {
   return (
     <>
       {renderHeader()}
-jhwergsejfgfjhdghjgdfjgjfgjhf 
+      jhwergsejfgfjhdghjgdfjgjfgjhf
       <Routes>
         <Route path="/" element={<Jobportailpage />} />
 
@@ -79,7 +79,6 @@ jhwergsejfgfjhdghjgdfjgjfgjhf
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="*" element={<Error></Error>}></Route>
       </Routes>
-
       <Footer></Footer>
     </>
   );
