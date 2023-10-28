@@ -34,10 +34,10 @@ function App() {
   return (
     <>
       {renderHeader()}
-      <html>jghlkhjklhjklhjkghl</html>
+
       <Routes>
         <Route path="/" element={<Jobportailpage />} />
-        gfgghfghf
+        fyyuui
         <Route
           path="/post_job"
           element={
